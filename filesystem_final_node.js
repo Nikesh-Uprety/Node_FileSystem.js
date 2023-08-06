@@ -223,7 +223,7 @@ function listFilesInDirectory(directoryPath) {
 
 function displayFileSystem(user) {
     console.log('--- File System ---');
-    console.log('Path\t\t\tType\tSize\t\tLast Modified\t\tPermissions\t\tOwner');
+    console.log('Path\t\t\t\t\t\t\t\t\t\t\tType\tSize\t\t\t\t\tLast Modified\t\t\t\t\tPermissions\t\t\t\t\tOwner');
     console.log('-----------------------------------------------------------------------');
     Object.entries(fileSystem).forEach(([filePath, file]) => {
         if (file?.permissions?.read && (file.user === user || file.permissions.write)) {
@@ -373,9 +373,8 @@ function main() {
 });
 }
 
-// Create the root directory if it doesn't exist
-if (!fs.existsSync(ROOT_DIRECTORY)) {
-    fs.mkdirSync(ROOT_DIRECTORY);
-}
+// Create the root directory if it doesn't exis
 
 main();
+
+module.export={createFile}
