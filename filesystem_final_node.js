@@ -66,7 +66,6 @@ function createFile(filePath, content, user) {
 }
 
 
-
 function readFile(filePath, user) {
     if (!filePath) {
         throw new Error('File path is required.');
@@ -251,8 +250,8 @@ function main() {
         }
         console.log("Nikesh Uprety | 220026")
     while (true) {
-        console.log("------------------------------")
-        console.log("------------------------------")
+        console.log("--------------------------------")
+        console.log("--------------------------------")
         console.log('1. Create File');
         console.log('2. Read File');
         console.log('3. Write File');
@@ -373,8 +372,4 @@ function main() {
 });
 }
 
-// Create the root directory if it doesn't exis
-
 main();
-
-module.export={createFile}
