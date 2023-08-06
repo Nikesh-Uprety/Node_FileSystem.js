@@ -1,0 +1,1 @@
+Node.js was initially written by Ryan Dahl in 2009, about thirteen years after the introduction of first Server Side JavaScript.
